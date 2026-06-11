@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lisper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+<body>
+  <h1>What's your location?</h1>
+  <div class="card">
+  <p>
+      
+
+
+
+
+  <form id="myForm" action="/get-weather-condition" method="POST"> 
+    <label for="latInput">Latitude:</label> 
+    <input type="number" id="latInput" name="latitude" step="any" required> 
+    
+    <label for="longInput">Longitude:</label> 
+    <input type="number" id="longInput" name="longitude" step="any" required> 
+    
+    <input id="get"  type="submit" value="GET WEATHER"> 
+</form>
+
+
+  </div>
+  <p class="user">
+    
+     <% if (locals.feedback) { %>
+    <%= feedback%> 
+  <% }  %>
+
+  </p>
+</body>
+
+</html>
